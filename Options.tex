@@ -1,0 +1,28 @@
+\setlength{\cftfignumwidth}{3em}
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
+
+\newcommand{\conduct}{$\mu S/cm$} %conductibilité
+
+% Profondeur de \subsubsection = 3
+\setcounter{tocdepth}{2}     % Dans la table des matieres
+\setcounter{secnumdepth}{3}  % Avec un numero.
+\fancyhf{}
+\fancyhead[L]{\slshape \leftmark}
+\fancyhead[R]{\thepage}
+%\fancyhead[C]{}
+%\fancyfoot[L]{Mohamed Rafik MEGDICHE}
+%\fancyfoot[C]{\thepage}
+%\fancyfoot[R]{Ecole Polytechnique de Tunisie}
+\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+\normalsize
+\pagestyle{fancy}
